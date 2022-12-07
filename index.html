@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio Pizzaria</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li>
+                <h2>Pizzaria da Mama</h2>
+                <h2>Vendas de Pizzas</h2>
+            </li>
+        </ul>
+    </header>
+    <br>
+
+    <div class="bancodedados"></div>
+    <form id="pizzaForm">
+        <label for="inputPizza">Pizza:</label>
+        <input type="text" id="inputPizza">
+        <label for="inputQtd">Quantidade:</label>
+        <input type="number" id="inputQtd">
+        <label for="inputValor">Valor:</label>
+        <input type="text" id="inputValor">
+        <input type="submit" value="Salvar">
+    </form>
+    </div>
+    <p>Database status: <span id="outputdb">Banco de dados</span>
+    </p>
+    <section>
+
+        <form>
+            <h2>Selecione a pizza vendida</h2>
+            <ul>
+                <li><input type="radio" id="mussarela" name="pizza">
+                    <label for="mussarela">Mussarela</label>
+                </li>
+                <li><input type="radio" id="portuguesa" name="pizza">
+                    <label for="portuguesa">Portuguesa</label>
+                </li>
+                <li><input type="radio" id="quatroqueijos" name="pizza">
+                    <label for="quatroqueijos">Quatro-queijos</label>
+                </li>
+                <li><input type="radio" id="mista" name="pizza">
+                    <label for="mista">Mista</label>
+                </li>
+                <li><input type="radio" id="provolone" name="pizza">
+                    <label for="provolone">Provolone</label>
+                </li>
+            </ul>
+        </form>
+    </section>
+    <section class="btn">
+        <button id="vendas">Venda</button>
+        <button id="estorno">Estorno</button>
+    </section>
+
+    <section id="table">
+
+        <table>
+            <tr class="linha-valor">
+                <td>Sabor</td>
+                <td>Quantidade</td>
+                <td class="info-valor">Valor</td>
+
+            </tr>
+            <tr>
+                <td>Mussarela</td>
+                <td id="resultadoMussarela"></td>
+                <th id="vendaMussarela"></th>
+            </tr>
+            <tr>
+                <td>Portuguesa</td>
+                <td id="resultadoPortuguesa"></td>
+                <th id="vendaPortuguesa"></th>
+            </tr>
+            <tr>
+                <td>Quatro-queijos</td>
+                <td id="resultadoQuatroqueijos"></td>
+                <th id="vendaQuatroqueijos"></th>
+            </tr>
+            <tr>
+                <td>Mista</td>
+                <td id="resultadoMista"></td>
+                <th id="vendaMista"></th>
+            </tr>
+            <tr>
+                <td>Provolone</td>
+                <td id="resultadoProvolone"></td>
+                <th id="vendaProvolone"></th>
+            </tr>
+
+        </table>
+
+    </section><br>
+
+    <section>
+        <button id="export" onclick="exportReportToExcel(this)">Exportar Planilha</button>
+    </section>
+    <script src="./assets/javascript/indexedDB.js"></script>
+</body>
+
+</html>
