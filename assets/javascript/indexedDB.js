@@ -83,6 +83,40 @@ const addData = (event) => {
     }
 }
 
+//Lendo os dados e escrevendo na tela
+
+/**const readData = () => {
+  cleanList();
+  let transaction = db.transaction(storeName);
+  let objectStore = transaction.objectStore(storeName);
+  objectStore.openCursor().onsuccess = (event) => {
+    let cursor = event.target.result;
+
+    if(cursor) {
+      const listItem = document.createElement('li');
+      const textItem = `City: ${cursor.value.city} lat: ${cursor.value.lat} log: ${cursor.value.log}`;
+
+      listItem.textContent = textItem;
+      listItem.setAttribute('data-location-id', cursor.value.id);
+
+      dataList.appendChild(listItem);
+
+      cursor.continue();
+    } else if(!dataList.firstChild) {
+      const listItem = document.createElement('li');
+      listItem.textContent = 'No location saved';
+      dataList.appendChild(listItem);
+    }
+
+  }
+}
+
+const cleanList = () => {
+  dataList.innerHTML = '';
+}
+ */
+
+
 // execute script when the DOM is loaded
 document.addEventListener('DOMContentLoaded', (event) => {
     outDB = document.getElementById('outputdb');

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cardápio Pizzaria</title>
+    <title>Tabela Produtos</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
@@ -33,33 +33,7 @@
     </div>
     <p>Database status: <span id="outputdb">Banco de dados</span>
     </p>
-    <section>
-
-        <form>
-            <h2>Selecione a pizza vendida</h2>
-            <ul>
-                <li><input type="radio" id="mussarela" name="pizza">
-                    <label for="mussarela">Mussarela</label>
-                </li>
-                <li><input type="radio" id="portuguesa" name="pizza">
-                    <label for="portuguesa">Portuguesa</label>
-                </li>
-                <li><input type="radio" id="quatroqueijos" name="pizza">
-                    <label for="quatroqueijos">Quatro-queijos</label>
-                </li>
-                <li><input type="radio" id="mista" name="pizza">
-                    <label for="mista">Mista</label>
-                </li>
-                <li><input type="radio" id="provolone" name="pizza">
-                    <label for="provolone">Provolone</label>
-                </li>
-            </ul>
-        </form>
-    </section>
-    <section class="btn">
-        <button id="vendas">Venda</button>
-        <button id="estorno">Estorno</button>
-    </section>
+    <br><br><br>
 
     <section id="table">
 
@@ -98,11 +72,8 @@
 
         </table>
 
-    </section><br>
-
-    <section>
-        <button id="export" onclick="exportReportToExcel(this)">Exportar Planilha</button>
     </section>
+
     <script src="./assets/javascript/indexedDB.js"></script>
 </body>
 
