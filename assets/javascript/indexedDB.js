@@ -85,36 +85,35 @@ const addData = (event) => {
 
 //Lendo os dados e escrevendo na tela
 
-/**const readData = () => {
-  cleanList();
-  let transaction = db.transaction(storeName);
-  let objectStore = transaction.objectStore(storeName);
-  objectStore.openCursor().onsuccess = (event) => {
-    let cursor = event.target.result;
+const readData = () => {
+    cleanList();
+    let transaction = db.transaction(storeName);
+    let objectStore = transaction.objectStore(storeName);
+    objectStore.openCursor().onsuccess = (event) => {
+        let cursor = event.target.result;
 
-    if(cursor) {
-      const listItem = document.createElement('li');
-      const textItem = `City: ${cursor.value.city} lat: ${cursor.value.lat} log: ${cursor.value.log}`;
+        if (cursor) {
+            const listItem = document.createElement('li');
+            const textItem = `nome: ${cursor.value.city} qtd: ${cursor.value.lat} val: ${cursor.value.log}`;
 
-      listItem.textContent = textItem;
-      listItem.setAttribute('data-location-id', cursor.value.id);
+            listItem.textContent = textItem;
+            listItem.setAttribute('data-pizza-id', cursor.value.id);
 
-      dataList.appendChild(listItem);
+            dataList.appendChild(listItem);
 
-      cursor.continue();
-    } else if(!dataList.firstChild) {
-      const listItem = document.createElement('li');
-      listItem.textContent = 'No location saved';
-      dataList.appendChild(listItem);
+            cursor.continue();
+        } else if (!dataList.firstChild) {
+            const listItem = document.createElement('li');
+            listItem.textContent = 'No location saved';
+            dataList.appendChild(listItem);
+        }
+
     }
-
-  }
 }
 
 const cleanList = () => {
-  dataList.innerHTML = '';
+    dataList.innerHTML = '';
 }
- */
 
 
 // execute script when the DOM is loaded
