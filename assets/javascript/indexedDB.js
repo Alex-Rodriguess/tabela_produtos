@@ -3,7 +3,9 @@ let outDB,
     inputQtd,
     inputValor,
     pizzaForm,
+    dataList,
     db;
+
 
 const dbName = 'pizzaDB';
 const storeName = 'cardapio';
@@ -11,7 +13,7 @@ const storeName = 'cardapio';
 // function to create database
 const createDB = () => {
     if (window.indexedDB) {
-        const request = window.indexedDB.open(dbName, 3);
+        const request = window.indexedDB.open(dbName, 4);
 
         request.onerror = (event) => {
             console.log('Erro de requerimento', event);
@@ -22,6 +24,7 @@ const createDB = () => {
             db = request.result;
             console.log('Successo no requerimento', event, db);
             outDB.innerHTML = 'Successo no requerimento';
+            readData();
         }
 
         request.onupgradeneeded = (event) => {
@@ -94,7 +97,7 @@ const readData = () => {
 
         if (cursor) {
             const listItem = document.createElement('li');
-            const textItem = `nome: ${cursor.value.nome} qtd: ${cursor.value.qtd} val: ${cursor.value.val}`;
+            const textItem = `Pizza: ${cursor.value.nome} qtd: ${cursor.value.qtd} val: ${cursor.value.val}`;
 
             listItem.textContent = textItem;
             listItem.setAttribute('data-pizza-id', cursor.value.id);
@@ -123,6 +126,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     inputQtd = document.getElementById('inputQtd');
     inputValor = document.getElementById('inputValor');
     pizzaForm = document.getElementById('pizzaForm');
+    dataList = document.getElementById('dataList');
 
     pizzaForm.onsubmit = addData;
 
