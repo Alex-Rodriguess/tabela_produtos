@@ -97,7 +97,7 @@ const readData = () => {
 
         if (cursor) {
             const listItem = document.createElement('li');
-            const textItem = `Pizza: ${cursor.value.nome} qtd: ${cursor.value.qtd} val: ${cursor.value.val}`;
+            const textItem = `Pizza: ${cursor.value.nome} Qtd: ${cursor.value.qtd} Val: ${cursor.value.val}`;
 
             listItem.textContent = textItem;
             listItem.setAttribute('data-pizza-id', cursor.value.id);
@@ -126,9 +126,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
     inputQtd = document.getElementById('inputQtd');
     inputValor = document.getElementById('inputValor');
     pizzaForm = document.getElementById('pizzaForm');
-    dataList = document.getElementById('dataList');
+    dataList = document.getElementById('data-list');
 
     pizzaForm.onsubmit = addData;
 
     createDB();
 });
+

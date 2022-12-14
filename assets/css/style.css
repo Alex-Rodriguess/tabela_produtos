@@ -68,3 +68,9 @@ p{
     font-size: 16px;
     color: rgb(0, 0, 0);
 }
+
+.dados{
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+}
