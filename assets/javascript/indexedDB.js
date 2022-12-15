@@ -133,3 +133,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
     createDB();
 });
 
+if (pizzaForm == "") {
+    document.querySelector("inputPizza").focus
+}
