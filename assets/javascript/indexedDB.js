@@ -96,7 +96,7 @@ const readData = () => {
         let cursor = event.target.result;
 
         if (cursor) {
-            const listItem = document.createElement('li');
+            const listItem = document.createElement('table');
             const textItem = `Pizza: ${cursor.value.nome} Qtd: ${cursor.value.qtd} Val: ${cursor.value.val}`;
 
             listItem.textContent = textItem;
@@ -134,5 +134,5 @@ document.addEventListener('DOMContentLoaded', (event) => {
 });
 
 if (pizzaForm == "") {
-    document.querySelector("inputPizza").focus
+
 }
