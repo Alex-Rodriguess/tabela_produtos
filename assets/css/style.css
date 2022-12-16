@@ -71,7 +71,7 @@ p{
 
 .dados{
     display: flex;
-    justify-content:baseline;
+    justify-content:center;
     padding-top: 2rem;
     font-family:Arial, Helvetica, sans-serif;
     font-size: 20px;
@@ -88,4 +88,9 @@ p{
 
 #data-list{
     list-style: none;
+}
+
+table{
+    color: rgb(62, 62, 71);
+    display: flex;
 }

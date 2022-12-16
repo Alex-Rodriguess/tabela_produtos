@@ -97,7 +97,7 @@ const readData = () => {
 
         if (cursor) {
             const listItem = document.createElement('table');
-            const textItem = `Pizza: ${cursor.value.nome} Qtd: ${cursor.value.qtd} Val: ${cursor.value.val}`;
+            const textItem = `Pizza: ${cursor.value.nome} |  Qtd: ${cursor.value.qtd} |  Val: ${cursor.value.val}`;
 
             listItem.textContent = textItem;
             listItem.setAttribute('data-pizza-id', cursor.value.id);
