@@ -87,10 +87,19 @@ p{
 }
 
 #data-list{
-    list-style: none;
+    padding: 5px;
 }
 
 table{
     color: rgb(0, 0, 0);
     display: flex;
+}
+
+table:hover{
+    background-color:coral;
+}
+
+button{
+    margin-left:  105%;
+    background-color: rgb(147, 141, 153);
 }
