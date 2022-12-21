@@ -93,14 +93,20 @@ p{
 table{
     color: rgb(0, 0, 0);
     display: flex;
+    top: 1em;
 }
 
 table:hover{
     background-color:coral;
 }
 
-button{
-    margin-top: 15px;
+.btn-excluir{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-top: -1em;
+    margin-bottom: 0px;
     margin-left:  105%;
     background-color: rgb(147, 141, 153);
 }
+
