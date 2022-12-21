@@ -108,7 +108,7 @@ const readData = () => {
             listItem.setAttribute('data-pizza-id', cursor.value.id);
 
             dataList.appendChild(listItem);
-            dataList.appendChild(btn);
+            dataList.append(btn);
 
 
             cursor.continue();
