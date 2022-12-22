@@ -135,11 +135,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
     pizzaForm = document.getElementById('pizzaForm');
     dataList = document.getElementById('data-list');
 
+    if (pizzaForm == "") return;
     pizzaForm.onsubmit = addData;
+
 
     createDB();
 });
 
-if (pizzaForm == "") {
-
-}
