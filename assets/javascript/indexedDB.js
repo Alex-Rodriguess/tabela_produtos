@@ -96,12 +96,10 @@ const readData = () => {
         let cursor = event.target.result;
 
         if (cursor) {
-            const listItem = document.createElement('table');
-            const btn = document.createElement('button');
-            btn.classList.add("btn-excluir");
-
-
-            btn.innerHTML = "Excluir";
+            const listItem = document.createElement('table')
+            const btn = document.createElement('button')
+            btn.classList.add("btn-excluir")
+            btn.innerHTML = "Excluir"
             const textItem = `Pizza: ${cursor.value.nome} |  Qtd: ${cursor.value.qtd} |  Val: ${cursor.value.val}`;
 
             listItem.textContent = textItem;

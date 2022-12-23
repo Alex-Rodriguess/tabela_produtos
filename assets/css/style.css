@@ -11,6 +11,11 @@ header{
     text-align: center;
 }
 
+.footer__container{
+    display: flex;
+    justify-content: center;
+}
+
 header ul li{
     list-style: none;
 }
@@ -110,3 +115,11 @@ table:hover{
     background-color: rgb(147, 141, 153);
 }
 
+.btn-new{
+    color: rgb(255, 255, 255);
+    background-color: red;
+}
+
+.btn-new:hover{
+    cursor: pointer;
+}
