@@ -102,7 +102,7 @@ table{
 }
 
 table:hover{
-    background-color:coral;
+    background-color:rgb(226, 225, 224);
 }
 
 .btn-excluir{
@@ -122,4 +122,5 @@ table:hover{
 
 .btn-new:hover{
     cursor: pointer;
+    color: aqua;
 }
