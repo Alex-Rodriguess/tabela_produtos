@@ -123,5 +123,5 @@ table:hover{
 .btn-new:hover{
     cursor: pointer;
     color: aqua;
-    background-color:blueviolet;
+    background-color:rgb(177, 114, 236);
 }
