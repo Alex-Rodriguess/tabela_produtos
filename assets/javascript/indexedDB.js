@@ -22,8 +22,8 @@ const createDB = () => {
 
         request.onsuccess = (event) => {
             db = request.result;
-            console.log('Successo no requerimento', event, db);
-            outDB.innerHTML = 'Successo no requerimento';
+            console.log('Sucesso no requerimento', event, db);
+            outDB.innerHTML = 'Sucesso no requerimento';
             readData();
         }
 
@@ -100,7 +100,7 @@ const readData = () => {
             const btn = document.createElement('button')
             btn.classList.add("btn-excluir")
             btn.innerHTML = "Excluir"
-            const textItem = `Pizza: ${cursor.value.nome} |  Qtd: ${cursor.value.qtd} |  Val: ${cursor.value.val}`;
+            const textItem = `Pizza: ${cursor.value.nome}  Qtd: ${cursor.value.qtd}  Val: ${cursor.value.val}`;
 
             listItem.textContent = textItem;
             listItem.setAttribute('data-pizza-id', cursor.value.id);

@@ -96,8 +96,9 @@ p{
 }
 
 table{
+    border-collapse: collapse;
     color: rgb(0, 0, 0);
-    display: flex;
+    /*display: none;*/
     top: 1em;
 }
 
@@ -105,15 +106,6 @@ table:hover{
     background-color:rgb(226, 225, 224);
 }
 
-.btn-excluir{
-    display: flex;
-    margin: 0;
-    padding: 10;
-    margin-top: -18px;
-    margin-bottom: 0px;
-    margin-left:  102%;
-    background-color: rgb(147, 141, 153);
-}
 
 .btn-new{
     color: rgb(255, 255, 255);
