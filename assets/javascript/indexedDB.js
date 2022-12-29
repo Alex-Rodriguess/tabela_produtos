@@ -96,17 +96,19 @@ const readData = () => {
         let cursor = event.target.result;
 
         if (cursor) {
-            const listItem = document.createElement('table')
-            const btn = document.createElement('button')
-            btn.classList.add("btn-excluir")
-            btn.innerHTML = "Excluir"
+            const listItem = document.createElement('table');
+            let linha = document.createElement('tr');
+            let linha_data_1 = document.createElement('td')
+
             const textItem = `Pizza: ${cursor.value.nome}  Qtd: ${cursor.value.qtd}  Val: ${cursor.value.val}`;
 
             listItem.textContent = textItem;
             listItem.setAttribute('data-pizza-id', cursor.value.id);
 
             dataList.appendChild(listItem);
-            dataList.append(btn);
+            linha.appendChild(linha_data_1);
+
+
 
 
             cursor.continue();
