@@ -16,20 +16,20 @@ const createDB = () => {
         const request = window.indexedDB.open(dbName, 4);
 
         request.onerror = (event) => {
-            console.log('Erro de requerimento', event);
-            outDB.innerHTML = 'Erro de requerimento';
+            console.log('Erro', event);
+            outDB.innerHTML = 'Erro';
         }
 
         request.onsuccess = (event) => {
             db = request.result;
-            console.log('Sucesso no requerimento', event, db);
-            outDB.innerHTML = 'Sucesso no requerimento';
+            console.log('online', event, db);
+            outDB.innerHTML = 'online';
             readData();
         }
 
         request.onupgradeneeded = (event) => {
-            console.log('Upgrade de requerimento', event)
-            outDB.innerHTML = 'Upgrade de requerimento';
+            console.log('Upgrade', event)
+            outDB.innerHTML = 'Upgrade';
 
             //saving the database
             let db = event.target.result;
@@ -54,7 +54,7 @@ const createDB = () => {
 
     } else {
         console.log('You don\'t have support');
-        outDB.innerHTML = 'Upgrade de requerimento';
+        outDB.innerHTML = 'Upgrade';
     }
 }
 
@@ -108,13 +108,10 @@ const readData = () => {
             dataList.appendChild(listItem);
             linha.appendChild(linha_data_1);
 
-
-
-
             cursor.continue();
         } else if (!dataList.firstChild) {
             const listItem = document.createElement('li');
-            listItem.textContent = 'No location saved';
+            listItem.textContent = 'Banco de dados vazio';
             dataList.appendChild(listItem);
         }
 
@@ -135,10 +132,32 @@ document.addEventListener('DOMContentLoaded', (event) => {
     pizzaForm = document.getElementById('pizzaForm');
     dataList = document.getElementById('data-list');
 
-    if (pizzaForm == "") return;
+
     pizzaForm.onsubmit = addData;
 
 
     createDB();
 });
 
+var visibilidade = true;
+
+function exibir() {
+    document.getElementsByClassName("dados").style.display = "block";
+
+}
+
+function ocultar() {
+    document.getElementsByClassName("dados").style.display = "none";
+}
+
+function ocultarExibir() {
+    if (visibilidade) {
+        document.getElementsByClassName("dados").style.display = "none";
+        visibilidade = false;
+
+    } else {
+        document.getElementsByClassName("dados").style.display = "block";
+        visibilidade = true;
+    }
+
+}

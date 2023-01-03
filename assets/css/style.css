@@ -11,64 +11,32 @@ header{
     text-align: center;
 }
 
-.footer__container{
-    display: flex;
-    justify-content: center;
-}
-
 header ul li{
     list-style: none;
 }
 
-section form ul li{
-    list-style: none;
-}
-
-section form ul li label{
-    font-size: 22px;
-}
-
-section{
-    margin-top: 1%;
-    display: flex;
-    justify-content: center;
-    font-size: medium;
-}
-
-section button{
+button{
     margin: 5px;
     font-size: 20px;
 }
 
-table, th, td{
+table, tr, td{
+    display: flex;
+    justify-content: center;
     border: 2px solid black;
     border-collapse: collapse;
-    border-radius: 5px;
-    font-size: medium;
     height: 30px;
-    width: 580px;
+    width: 680px;
     font-size: 22px;
 }
 
-p{
-    font-size: 22px;
-    padding-right: 1em;
-}
-
-#totalgeral{
-    position: relative;
-    font-size: 24px;
-    
-   
-}
-
-.bancodedados{
-   display: flex;
-   padding: 2px;
-   margin: 5px;
+table:hover{
+    background-color:rgb(226, 225, 224);
 }
 
 #pizzaForm{
+    display: flex;
+    justify-content: space-around;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 18px;
     color: rgb(0, 0, 0);
@@ -95,28 +63,19 @@ p{
     padding: 5px;
 }
 
-table{
-    border-collapse: collapse;
-    color: rgb(0, 0, 0);
-    top: 1em;
-}
-
-table:hover{
-    background-color:rgb(226, 225, 224);
-}
-
-
-.btn-new{
-    color: rgb(255, 255, 255);
-    background-color: rgb(247, 1, 1);
-}
-
-.btn-new:hover{
-    cursor: pointer;
-    color: aqua;
-    background-color:rgb(177, 114, 236);
-}
 
 footer{
+    text-align: center;
     color: blue;
+    padding-top: 35%;
+}
+
+#btn-mostrarocultar{
+    font-size: 15px;
+    color: green;
+    background-color: rgb(255, 255, 167);
+}
+
+#btn-mostrarocultar:hover{
+    background-color: rgb(255, 0, 0);
 }
