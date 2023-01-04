@@ -139,25 +139,18 @@ document.addEventListener('DOMContentLoaded', (event) => {
     createDB();
 });
 
-var visibilidade = true;
+/**Mostrando e escondendo a tabela dados*/
 
-function exibir() {
-    document.getElementsByClassName("dados").style.display = "block";
+var btn = document.querySelector("#btn-mostrarocultar");
 
-}
+btn.addEventListener("click", function () {
 
-function ocultar() {
-    document.getElementsByClassName("dados").style.display = "none";
-}
+    var div = document.querySelector("#data-list");
 
-function ocultarExibir() {
-    if (visibilidade) {
-        document.getElementsByClassName("dados").style.display = "none";
-        visibilidade = false;
+    if (div.style.display === "none") {
+        div.style.display = "block";
 
     } else {
-        document.getElementsByClassName("dados").style.display = "block";
-        visibilidade = true;
+        div.style.display = "none";
     }
-
-}
+})
