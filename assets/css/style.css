@@ -23,7 +23,7 @@ button{
 table, tr, td{
     display: flex;
     justify-content: left;
-    border: 2px solid black;
+    border: 2px solid rgb(114, 111, 98);
     border-collapse: collapse;
     height: 30px;
     width: 680px;
@@ -52,6 +52,8 @@ table:hover{
 }
 
 p{
+    display: flex;
+    justify-content: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: brown;
     font-size: 18px;
@@ -64,6 +66,7 @@ p{
 
 
 footer{
+    position:relative;
     text-align: center;
     color: blue;
     padding-top: 30%;
