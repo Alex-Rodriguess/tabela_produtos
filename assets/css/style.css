@@ -1,84 +1,85 @@
-body{
-    margin: auto;
-    width: 60%;
+body {
+  margin: auto;
+  width: 100%;
 }
 
-header{
-    display: flex;
-    justify-content: center;
-    background-color: rgb(41, 93, 136);
-    color: aliceblue;
-    text-align: center;
+.titulo {
+  color: #d54d7b;
+  font-family: "Great Vibes", cursive;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: normal;
+  text-align: center;
+  text-shadow: 0 1px 1px #fff;
+  background-color: black;
+  padding: 5px;
 }
 
-header ul li{
-    list-style: none;
+button {
+  margin: 5px;
+  font-size: 20px;
 }
 
-button{
-    margin: 5px;
-    font-size: 20px;
+table,
+tr,
+td {
+  display: flex;
+  justify-content: left;
+  border: 2px solid rgb(114, 111, 98);
+  border-collapse: collapse;
+  height: 30px;
+  width: 680px;
+  font-size: 22px;
 }
 
-table, tr, td{
-    display: flex;
-    justify-content: left;
-    border: 2px solid rgb(114, 111, 98);
-    border-collapse: collapse;
-    height: 30px;
-    width: 680px;
-    font-size: 22px;
+table:hover {
+  background-color: rgb(226, 225, 224);
 }
 
-table:hover{
-    background-color:rgb(226, 225, 224);
+#pizzaForm {
+  display: flex;
+  justify-content: space-around;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
 }
 
-#pizzaForm{
-    display: flex;
-    justify-content: space-around;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 18px;
-    color: rgb(0, 0, 0);
+.dados {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: black;
 }
 
-.dados{
-    display: flex;
-    justify-content:center;
-    padding-top: 2rem;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    color: black;
+p {
+  display: flex;
+  justify-content: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: brown;
+  font-size: 18px;
 }
 
-p{
-    display: flex;
-    justify-content: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: brown;
-    font-size: 18px;
+#data-list {
+  display: none;
+  padding: 5px;
 }
 
-#data-list{
-    display: none;
-    padding: 5px;
+footer {
+  position: relative;
+  text-align: center;
+  color: blue;
+  padding-top: 30%;
 }
 
-
-footer{
-    position:relative;
-    text-align: center;
-    color: blue;
-    padding-top: 30%;
+#btn-mostrarocultar {
+  border-radius: 8px;
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(75, 66, 173);
 }
 
-#btn-mostrarocultar{
-    border-radius: 8px;
-    font-size: 15px;
-    color: rgb(255, 255, 255);
-    background-color: rgb(75, 66, 173);
-}
-
-#btn-mostrarocultar:hover{
-    background-color: rgb(255, 0, 0);
+#btn-mostrarocultar:hover {
+  background-color: rgb(255, 0, 0);
 }
