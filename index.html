@@ -16,7 +16,10 @@
 
         <div class="titulo">
             <h2>Pizzaria da Mama</h2>
-            <h2> Vendas de Pizzas</h2>
+
+        </div>
+        <div class="subtitulo">
+            <h2> Controle de Vendas de Pizzas</h2>
         </div>
 
 
@@ -25,17 +28,21 @@
 
     <div class="bancodedados"></div>
     <form id="pizzaForm">
-        <label for="inputPizza">Pizza:</label>
-        <input type="text" id="inputPizza">
-        <label for="inputQtd">Quantidade:</label>
-        <input type="number" id="inputQtd">
-        <label for="inputValor">Valor:</label>
-        <input type="text" id="inputValor">
+        <label for="inputPizza">Pizza: </label>
+        <input type="text" id="inputPizza" required>
+        <label for="inputQtd">Quantidade: </label>
+        <input type="number" id="inputQtd" required>
+        <label for="inputValor">Valor: </label>
+        <input type="text" id="inputValor" required>
         <input type="submit" value="Salvar">
+
     </form>
+
+    <br><br><br>
     <p>Database status:
         <span id="outputdb">Banco de dados</span>
         <button id="btn-mostrarocultar" onclick="ocultarExibir()">Mostrar/ocultar</button>
+        <i id="btn-reload" class="fa-solid fa-rotate"></i>
     </p>
     </div>
     <div class="dados">

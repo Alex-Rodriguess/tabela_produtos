@@ -133,6 +133,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
     dataList = document.getElementById('data-list');
 
 
+
+
     pizzaForm.onsubmit = addData;
 
 
@@ -148,9 +150,20 @@ btn.addEventListener("click", function () {
     var div = document.querySelector("#data-list");
 
     if (div.style.display === "none") {
+
         div.style.display = "block";
 
     } else {
         div.style.display = "none";
+
     }
+})
+
+/**Botao Reload */
+
+var btnReload = document.getElementById("btn-reload");
+
+btnReload.addEventListener("click", function () {
+
+    location.reload();
 })
