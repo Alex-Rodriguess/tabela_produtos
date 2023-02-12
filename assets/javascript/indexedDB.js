@@ -167,3 +167,11 @@ btnReload.addEventListener("click", function () {
 
     location.reload();
 })
+
+/*function exportReportToExcel() {
+
+    TableToExcel.convert(document.getElementById("table"), {
+        name: "planilha.xlsx", sheet: { name: "planilha" }
+    });
+}*/
+
