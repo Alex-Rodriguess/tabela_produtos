@@ -42,6 +42,8 @@ td {
   height: 30px;
   width: 680px;
   font-size: 22px;
+  background-color: #cdcdcd;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 table:hover {
@@ -60,7 +62,7 @@ table:hover {
 
 .dados {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   padding-top: 2rem;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
@@ -71,7 +73,7 @@ p {
   display: flex;
   justify-content: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: brown;
+  color: rgb(255, 7, 7);
   font-size: 18px;
 }
 
@@ -92,15 +94,15 @@ footer {
   left: 25px;
   height: 30px;
   bottom: 5px;
-
   border-radius: 8px;
   font-size: 15px;
-  color: rgb(255, 255, 255);
-  background-color: rgb(75, 66, 173);
+  color: rgb(0, 0, 0);
+  background-color: rgb(37, 171, 3);
 }
 
 #btn-mostrarocultar:hover {
-  background-color: rgb(255, 0, 0);
+  background-color: rgb(74, 217, 193);
+  transition: 2s;
 }
 
 #btn-reload {
